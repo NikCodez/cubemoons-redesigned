@@ -1,0 +1,145 @@
+*body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    background-color: #0D1216;
+     overflow: hidden;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+:root{
+   background-color: #0D1216;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #FFFFFF;
+    opacity: 20%;
+}
+
+#hero{background-attachment: sticky;}
+
+.hero-content h2{
+  font-family: Inter;
+font-weight: 600;
+color: #FFFFFF;
+font-style: Semi Bold;
+font-size: 47.72px;
+line-height: 106%;
+letter-spacing: -3%;
+text-align: center;
+text-transform: capitalize;
+}
+
+.hero-content p{
+font-family: Inter;
+font-weight: 300;
+font-style: Regular;
+font-size: 19px;
+line-height: 150%;  
+text-align: center;
+color: #FFFFFF;
+opacity: 70%;
+margin-top: -26px;
+}
+
+.bluebg{
+    height: 90vh;
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+     list-style: none;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    font-size: 13px;
+    opacity: 90%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+#logo{justify-content: center; align-items: center;}
+#logo img{ width: 100px; height: auto; justify-self: center; align-self: center;}
+.contact-btn{
+    background-color: #0069C8;
+    color: white;
+    border: 1px solid #82B8DC;
+    border-radius: 8px;
+    height: 33px;
+    width: 105px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.call-btn, .explore-btn{
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+     height: 31px;
+     padding: 0 15px;
+}
+
+.call-btn{
+    background-color: #0069C8;
+    border: 1px solid #82B8DC;
+    cursor: pointer;
+}
+
+.explore-btn{
+    background-color: transparent;
+    border: 1px solid #5a6d7b;
+    cursor: pointer;
+}
+
+.hero-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img{
+    width: 29%;
+    max-width: 600px;
+    height: auto;
+    margin-top: -10px;
+}
