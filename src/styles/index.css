@@ -1,10 +1,9 @@
-*body{
+body{
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
+    font-family: 'Inter', sans-serif;
     background-color: #0D1216;
-     overflow: hidden;
+    overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
@@ -48,14 +47,10 @@ opacity: 70%;
 margin-top: -26px;
 }
 
-.bluebg{
-    height: 90vh;
-}
 
 .nav-links{
     display: flex;
     gap: 20px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -77,39 +72,35 @@ margin-top: -26px;
 nav{
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 3px;
 }
+
+.nav-left img{width: 100px; height: auto; justify-self: center; align-self: center;}
 
 .nav-left, .nav-right{
     display: flex;
-    align-items: center;
     padding: 0 20px;
 }
-#logo{justify-content: center; align-items: center;}
-#logo img{ width: 100px; height: auto; justify-self: center; align-self: center;}
 .contact-btn{
     background-color: #0069C8;
     color: white;
     border: 1px solid #82B8DC;
     border-radius: 8px;
-    height: 33px;
+    height: 30px;
     width: 105px;
     font-weight: 500;
     cursor: pointer;
     font-size: 13px;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-}
-
 .hero-buttons{
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 .call-btn, .explore-btn{
     border-radius: 5px;
@@ -140,6 +131,26 @@ nav{
 .hero-image img{
     width: 29%;
     max-width: 600px;
-    height: auto;
     margin-top: -10px;
+}
+
+.about{
+    background-color:#F2FAFF;
+}
+
+.aboutcontent{
+    font-family: "Inter", sans-serif; 
+    padding: 50px 180px; display: flex; 
+    gap: 150px; justify-content: center; align-items: baseline;
+}
+
+.aboutcontent h3{color: #000000;  font-weight: 500; width: 500px;font-size: 20px;}
+.aboutcontent p{
+    color:#575757;
+    font-size: 23px;
+    line-height: 186%;
+    letter-spacing: -2%;
+    text-align: justify;
+    text-transform: capitalize;
+    font-weight: 500;
 }
