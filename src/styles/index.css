@@ -58,31 +58,44 @@ margin-top: -26px;
 .nav-links li{
     font-family: "Inter", sans-serif;
     font-weight: 500;
-     list-style: none;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links li a{
     text-decoration: none;
     color: #FFFFFF;
-    display: block;
+   display: flex;        
+    align-items: center;
     font-size: 13px;
     opacity: 90%;
+    height: 100%;
+}
+
+.navbar {
+    height: 70px;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center; 
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 3px;
+    height: 100%; 
 }
 
-.nav-left img{width: 100px; height: auto; justify-self: center; align-self: center;}
+.nav-left img{width: 100px; height: auto; }
 
 .nav-left, .nav-right{
     display: flex;
     padding: 0 20px;
+    align-items: center;
+    height: 100%;
 }
 .contact-btn{
     background-color: #0069C8;
@@ -91,6 +104,9 @@ nav{
     border-radius: 8px;
     height: 30px;
     width: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     cursor: pointer;
     font-size: 13px;
@@ -129,7 +145,7 @@ nav{
 }
 
 .hero-image img{
-    width: 29%;
+    width: 30%;
     max-width: 600px;
     margin-top: -10px;
 }
