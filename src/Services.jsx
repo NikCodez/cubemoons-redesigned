@@ -1,23 +1,26 @@
 import { useState } from "react";
+import ai1 from "./assets/images/ai1.png";
+import ai2 from "./assets/images/ai2.png";
+import ai3 from "./assets/images/ai3.png";
 
 const services = [
   {
     title: "AI and Automation",
     description:
-      "Artificial intelligence is no longer a technology you evaluate on a roadmap...",
-    image: "/images/ai1.png",
+      "Artificial intelligence is no longer a technology you evaluate on a roadmap. It is a capability that is reshaping industries, redefining what is operationally possible, and creating real competitive distance between the businesses that are building with it and the ones that are still watching from the sidelines.",
+    image: ai1,
   },
   {
     title: "Generative AI Development",
     description:
-      "Generative AI has moved from headline to infrastructure faster than almost any technology...",
-    image: "/images/ai2.png",
+      "Generative AI has moved from headline to infrastructure faster than almost any technology in history. The businesses applying it effectively are not just experimenting they are shipping products, automating workflows, and building user experiences that would have been impossible to deliver at this quality and speed even two years ago",
+    image: ai2,
   },
   {
     title: "Intelligent Automation",
     description:
-      "Traditional automation is powerful but brittle...",
-    image: "/images/ai3.png",
+      "Traditional automation is powerful but brittle. It handles the cases it was explicitly programmed for and fails the moment something unexpected appears. Intelligent automation is different it combines the reliability of structured automation with the judgment of Al, creating systems that can handle variation, process unstructured inputs, and navigate the edge cases that rule-based automation cannot.",
+    image: ai3,
   },
 ];
 
@@ -47,8 +50,7 @@ function Services() {
 
           <div className="services-right">
             <p>
-              We combine AI development, generative AI, and intelligent automation
-              to streamline operations and unlock new capabilities.
+              We combine AI development, generative AI, and intelligent automation to streamline operations and unlock new capabilities.
             </p>
             <button className="view-btn">View All →</button>
           </div>
@@ -80,6 +82,7 @@ function Services() {
                 <div className="service-card">
 
                   <div className="card-left">
+                    <h3 className="card-title">{item.title}</h3>
                     <p>{item.description}</p>
                     <a href="#">Learn More ↗</a>
                   </div>

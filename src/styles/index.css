@@ -284,19 +284,18 @@ nav{
     background: #000;
 }
 
-/* SECTION */
+/* SERVICES SECTION STARTED */
 .services {
     background: #ffffff;
     padding: 100px 0;
 }
 
 .services-container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
     padding: 0 40px;
 }
 
-/* TOP */
 .services-top {
     display: flex;
     justify-content: space-between;
@@ -305,24 +304,28 @@ nav{
 }
 
 .tag {
-    font-size: 13px;
-    color: #777;
+    font-size: 16px;
+    color: #000000;
+
 }
 
 .services-top h2 {
-    font-size: 32px;
-    margin-top: 10px;
-    line-height: 1.4;
+    font-size: 37px;
+    margin-top: 15px;
+    line-height: 1.2;
 }
 
 .services-right {
-    max-width: 350px;
+    max-width: 600px;
+    margin-top: 20px;
 }
 
 .services-right p {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 1.5;
     color: #666;
     margin-bottom: 10px;
+    text-transform: capitalize;
 }
 
 .view-btn {
@@ -334,24 +337,22 @@ nav{
     cursor: pointer;
 }
 
-/* LIST */
 .services-list {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 65px;
 }
 
-/* HEADER */
 .service-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding: 10px 0;
+    padding: 50px 0;
     font-weight: 500;
+    border-bottom: 1px solid #8b8888;
 }
 
-/* ARROW */
 .arrow {
     width: 30px;
     height: 30px;
@@ -369,7 +370,6 @@ nav{
     color: white;
 }
 
-/* CARD */
 .service-card {
     background: #000;
     color: white;
@@ -382,11 +382,17 @@ nav{
     gap: 40px;
 }
 
-/* LEFT */
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 105px;
+}
+
 .card-left p {
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 20px;
+    max-width: 600px;
 }
 
 .card-left a {
@@ -395,7 +401,6 @@ nav{
     border-bottom: 1px solid white;
 }
 
-/* RIGHT */
 .card-right img {
     width: 100%;
     border-radius: 10px;
