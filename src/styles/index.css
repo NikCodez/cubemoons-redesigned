@@ -591,6 +591,8 @@ nav{
 .feature-section {
     background: #ffffff;
     padding: 120px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .feature-card {
@@ -644,4 +646,139 @@ nav{
 .feature-card::before {
     content: "";
     position: absolute;
+}
+
+.projects-section {
+    background: #F1FAFF;
+    padding: 39px 170px 100px;
+    position: relative;
+    z-index: 1;
+}   
+
+.projects-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.projects-left {
+    max-width: 450px;
+}
+
+.projects-left .tag {
+    font-size: 13px;
+    color: #3e3d3d;
+}
+
+.projects-left h2 {
+    font-size: 36px;
+    font-family: Inter, sans-serif;
+    margin-top: 10px;
+}
+
+.projects-right {
+    max-width: 600px;
+    padding-top: 14px;
+}
+
+.projects-right p {
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.view-btn {
+    background: #297af4;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 520px 460px;
+    gap: 24px;
+}
+
+.project-card {
+    position: relative;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.project-card.big {
+    grid-column: span 4;
+    height: 100%;
+}
+
+.project-card.small.top {
+    grid-column: span 2 ;
+    height: 100%;
+}
+
+.project-card.small.bottom {
+    height: 100%;
+    grid-column: span 2 ;
+}
+
+.project-card.wide {
+    grid-column: 2;
+    height: 100%;
+    grid-column: span 4;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.2),
+        transparent
+    );
+}
+
+.project-card {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+}
+
+.overlay span {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.overlay span::before {
+    content: "•";
+    color: #0069C8;
+    margin-right: 6px;
+    font-size : 22px;
+}
+
+.overlay h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 5px;
 }
