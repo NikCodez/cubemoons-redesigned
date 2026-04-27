@@ -5,6 +5,7 @@ import Services from "./Services";
 import Industries from "./Industries";
 import FeatureCard from "./FeatureCard";
 import Projects from "./Projects"
+import Blog from "./Blog";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <Industries/>
       <FeatureCard/>
       <Projects/>
+      <Blog/>
     </>
   );
 }

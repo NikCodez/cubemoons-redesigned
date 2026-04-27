@@ -25,7 +25,7 @@ const services = [
 ];
 
 function Services() {
-  const [activeIndex, setActiveIndex] = useState(null); 
+  const [activeIndex, setActiveIndex] = useState(0); 
 //   Only one open at a time but no card is opened before clicking  
 
   const toggle = (index) => {
