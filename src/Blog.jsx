@@ -2,7 +2,7 @@ import { useState } from "react";
 import blogImg from "./assets/images/blog.png";
 
 function Blog() {
-  const [active, setActive] = useState(1); // default open
+  const [active, setActive] = useState(null); // default open
 
   const toggle = (index) => {
     setActive(active === index ? null : index);
@@ -37,7 +37,13 @@ function Blog() {
           <div className="accordion-item">
             <div className="accordion-header" onClick={() => toggle(1)}>
               <span>Executive Guide to AI-Powered <br /> Business Automation</span>
-              <span>{active === 1 ? "−" : "+"}</span>
+              <div
+                  className={`arrowicon ${
+                    active === 1 ? "open" : ""
+                  }`}
+                >
+                  →
+                </div>
             </div>
 
             {active === 1 && (
@@ -57,7 +63,13 @@ function Blog() {
           <div className="accordion-item">
             <div className="accordion-header" onClick={() => toggle(2)}>
               <span>Executive Guide to Multi-Cloud Storage: <br /> Unlock Strategic Advantage</span>
-              <span>{active === 2 ? "−" : "+"}</span>
+              <div
+                  className={`arrowicon ${
+                    active === 2 ? "open" : ""
+                  }`}
+                >
+                  →
+                </div>
             </div>
 
             {active === 2 && (
@@ -77,7 +89,13 @@ function Blog() {
           <div className="accordion-item">
             <div className="accordion-header" onClick={() => toggle(3)}>
               <span>The Strategic Executive Guide: <br /> Custom Software vs SaaS</span>
-              <span>{active === 3 ? "−" : "+"}</span>
+              <div
+                  className={`arrowicon ${
+                    active === 3 ? "open" : ""
+                  }`}
+                >
+                  →
+                </div>
             </div>
 
             {active === 3 && (

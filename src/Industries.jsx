@@ -10,9 +10,7 @@ import Target from "./assets/animations/Target.webm";
 function Industries() {
   return (
     <section className="industries-section">
-     
-      <div className="background-watermark">Industries</div>
-
+           
       <div className="industries-container">
 
         <div className="industries-top">
@@ -29,7 +27,7 @@ function Industries() {
 
           <button className="cta-btn">Get Free Consultation →</button>
         </div>
-
+           <div className="background-watermark">Industries</div>
         <div className="industries-grid">
 
         {/* CARD 1 */}

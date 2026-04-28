@@ -6,6 +6,7 @@ import Industries from "./Industries";
 import FeatureCard from "./FeatureCard";
 import Projects from "./Projects"
 import Blog from "./Blog";
+import ContactSection from "./ContactSection";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <FeatureCard/>
       <Projects/>
       <Blog/>
+      <ContactSection/>
     </>
   );
 }
