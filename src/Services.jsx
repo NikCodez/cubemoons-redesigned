@@ -87,7 +87,7 @@ function Services() {
                     <a href="#">Learn More ↗</a>
                   </div>
 
-                  <div className="card-right">
+                  <div className="card-right-ai">
                     <img src={item.image} alt="" />
                   </div>
 
