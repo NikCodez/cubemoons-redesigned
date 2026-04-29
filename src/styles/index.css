@@ -89,7 +89,7 @@ nav{
     background: linear-gradient(90deg, #1f2228, #2e3138);
     display: flex;
     justify-content: space-between;
-    padding: 5px 25px;
+    padding: 0px 20px 10px 20px;
     opacity: 0;
     transform: translateY(-20px);
     pointer-events: none;
@@ -126,8 +126,8 @@ nav{
     transition: transform 0.25s ease, color 0.25s ease;
 }
 
-.menu-item:hover {
-    transform: scale(1px);
+.menu-item:hover h5{
+    transform: translateY(1.03px);
 }
 
 .menu-item h5 {
@@ -143,10 +143,6 @@ nav{
     opacity : 40%;
 }
 
-.menu-item:hover h5 {
-    transform: scaleX(1.8px);
-}
-
 .menu-backdrop {
     position: fixed;
     inset: 0;
@@ -155,6 +151,10 @@ nav{
     background: rgba(0, 0, 0, 0.4);
 
     z-index: 998;
+}
+
+.menu-left.wide {
+    width: 60%;
 }
 
 .menu-card {
@@ -197,6 +197,33 @@ nav{
     color:#0069C8;
     cursor: pointer;
 }
+
+.what-wrapper {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    gap: 40px;
+}
+
+.row1,
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.row1 .menu-left,
+.row2 .menu-left {
+    display: flex;
+    gap: 60px;
+    width: 75%;
+}
+
+.what-card {width: 30%;; border-radius:6px; margin-right:30px; margin-top:20px;}
+.careers-industries-card {width: 40%; margin-top: 60px;}
+.product-insights-card {width: 40%; margin-top: 20px;}
+.what-heading{font-size:13.5px;}
+.what-item{font-size:14px; color: #FFFFFF; opacity:70%;}
 
 .nav-item {
     position: relative;
