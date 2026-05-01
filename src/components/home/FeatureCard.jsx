@@ -1,4 +1,4 @@
-import feature from "./assets/images/feature.png";
+import feature from "@/assets/images/feature.png";
 
 function FeatureCard() {
   return (

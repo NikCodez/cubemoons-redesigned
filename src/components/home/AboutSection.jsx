@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import FounderImg from "./assets/images/Founder Image.png"
+import FounderImg from "@/assets/images/Founder Image.png"
 
 function AboutSection() {
   return (

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import blogImg from "./assets/images/blog.png";
+import blogImg from "@/assets/images/blog.png";
 
 function Blog() {
   const [active, setActive] = useState(null); // default open

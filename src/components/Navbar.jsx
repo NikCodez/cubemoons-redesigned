@@ -1,10 +1,13 @@
 import { useState, useRef, useEffect } from "react";
-import greencard from "./assets/images/Nav-green-card.png";
-import bluecard from "./assets/images/Nav-blue-card.png";
+import greencard from "@/assets/images/Nav-green-card.png";
+import bluecard from "@/assets/images/Nav-blue-card.png";
+import "@/styles/navbar.css";
+import { useNavigate } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ variant = "dark" }) {
      const [activeMenu, setActiveMenu] = useState(null);
      const menuRef = useRef();
+     const navigate = useNavigate();
 
   const toggleMenu = (menu) => {
     setActiveMenu((prev) => (prev === menu ? null : menu));
@@ -32,7 +35,7 @@ function Navbar() {
     />
   )}
   
-    <header className="navbar" ref={menuRef}>
+    <header className={`navbar ${variant === "light" ? "light" : ""}`} ref={menuRef}>
       <nav>
         <div className="nav-left">
           <img src="/cubemoons logo.png" />
@@ -66,7 +69,7 @@ function Navbar() {
                 onClick={() => toggleMenu("insights")}>
                 Insights ▾
             </li>
-            <li><button className="contact-btn">Contact Us &#10153;</button></li>
+            <li><button className="contact-btn" onClick={() => navigate("/Contact")}>Contact Us &#10153;</button></li>
           </ul>
         </div>
       </nav>

@@ -1,0 +1,150 @@
+.footer {
+    position: relative;
+    background: #000;
+    color: white;
+    padding: 120px 50px 40px;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.footer-bg {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0); 
+    transition: transform 0.1s ease;
+    top: -70px; 
+    font-size: 220px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.footer-bg.animate-up {
+    animation: moveUp 0.6s ease forwards;
+}
+
+.footer-bg:not(.animate-up) {
+    transform: translate(-50%, 0);
+}
+
+@keyframes moveUp {
+    from {
+        transform: translate(-50%, 120px);
+    }
+    to {
+        transform: translate(-50%, 0px);
+    }
+}
+
+.stroke {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    -webkit-text-stroke: 0.80px rgba(226,226,226,0.1);
+}
+
+.fill {
+    position: relative;
+
+    background: linear-gradient(
+        180deg,
+        rgba(155, 151, 151, 0.76) 0%,
+        rgba(0,0,0,0.4) 73.79%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.7fr;
+    gap: 50px;
+    position: relative;
+    margin-top: 260px;
+}
+
+.footer-logo {
+    width: 165px;
+   margin-top : 25px 
+}
+
+.footer-desc {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.footer-sub {
+    font-size: 15px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.book-btn {
+    background: #297af4;
+    border: 1px solid #82B8DC;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.socials {
+    margin-top: 45px;
+    display: flex;
+    gap: 23px;
+    align-items: center;
+}
+
+.socials a img{size:20px; width: 20px; height: 20px;}
+.socials a img[alt="youtube"]{width: 25px; height: 17px;}
+.socials a img[alt="Instagram"]{width: 20px; height: 19px;}
+
+.socials a , .footer-col li a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.footer-col h4 {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col li {
+    font-size: 15px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.chat-btn {
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid #555;
+    color: white;
+    padding: 12px 36px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888;
+}
+
+.footer-links {
+    display: flex;
+    gap: 55px;
+}

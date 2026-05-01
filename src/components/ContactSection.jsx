@@ -1,14 +1,9 @@
-  import logo from "../public/cubemoons logo.png";
-  import X from "../public/X logo.png";
-  import whatsapp from "../public/Whatsapp logo.png";
-  import youtube from "../public/youtube logo.png";
-  import LinkedIn from "../public/LinkedIn logo.png";
-  import Instagram from "../public/Instagram logo.png";
-  import Facebook from "../public/Facebook logo.png";
-
- import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import "@/styles/contactsection.css";
+import { useNavigate } from "react-router-dom";
 
   function ContactSection() {
+  const navigate = useNavigate();
 
    const bgRef = useRef();
 const sectionRef = useRef();
@@ -40,33 +35,6 @@ const [animate, setAnimate] = useState(false);
     
     return (
       <>
-        {/* TOP CTA SECTION */}
-        <section className="contact-cta">
-          <div className="cta-container">
-            
-            <div className="cta-left">
-              <h2>
-                Be Part of the Journey Stay <br />
-                Connected With Us
-              </h2>
-              <p>
-                Get exclusive updates and content you won’t find anywhere else.
-              </p>
-            </div>
-
-            <div className="cta-right">
-              <div className="input-box">
-                <input type="email" placeholder="youremail@gmail.com" />
-                <button>Submit →</button>
-              </div>
-              <span className="small-text">
-                Thoughtfully curated updates, delivered occasionally.
-              </span>
-            </div>
-
-          </div>
-        </section>
-
         {/* FOOTER */}
         <footer ref={sectionRef} className="footer">
 
@@ -80,7 +48,7 @@ const [animate, setAnimate] = useState(false);
 
             {/* LEFT */}
             <div className="footer-col">
-              <img src={logo} alt="logo" className="footer-logo" />
+              <img src="/cubemoons logo.png" alt="logo" className="footer-logo" />
 
               <p className="footer-desc">
                 Want to make sure we’re the <br /> right fit? Book a discovery call!
@@ -90,16 +58,16 @@ const [animate, setAnimate] = useState(false);
                 Find out how you can up your <br /> design game, forever.
               </p>
 
-              <button className="book-btn">Book a call →</button>
+              <button className="book-btn" onClick={() =>  navigate("/contact")}>Book a call →</button>
 
               <div className="socials">
-                <a href="https://x.com/Cubemoons_"><img src={X} alt="X" /></a>
-                <a href="https://www.youtube.com/@cubemoons"><img src={youtube}alt="youtube" /></a>
-                <a href="#"><img src={whatsapp} alt="Whatsapp" /></a>
+                <a href="https://x.com/Cubemoons_"><img src="/X logo.png" alt="X" /></a>
+                <a href="https://www.youtube.com/@cubemoons"><img src="/youtube logo.png" alt="youtube" /></a>
+                <a href="#"><img src="/Whatsapp logo.png" alt="Whatsapp" /></a>
               
-                <a href="https://www.linkedin.com/company/cubemoons/posts/?feedView=all"><img src={LinkedIn} alt="LinkedIn" /></a>
-                <a href="https://www.instagram.com/cube.moons/"><img src={Instagram} alt="Instagram" /></a>
-                <a href="https://www.facebook.com/people/Cubemoons/61577696759028/#"><img src={Facebook} alt="Facebook" /></a>
+                <a href="https://www.linkedin.com/company/cubemoons/posts/?feedView=all"><img src="/Linkedin logo.png" alt="LinkedIn" /></a>
+                <a href="https://www.instagram.com/cube.moons/"><img src="/Instagram logo.png" alt="Instagram" /></a>
+                <a href="https://www.facebook.com/people/Cubemoons/61577696759028/#"><img src="/Facebook logo.png" alt="Facebook" /></a>
               </div>
             </div>
 
@@ -151,7 +119,7 @@ const [animate, setAnimate] = useState(false);
                 <li><a href="mailto:info@cubemoons.com">✉ info@cubemoons.com</a></li>
               </ul>
 
-              <button className="chat-btn">Chat with us</button>
+              <button className="chat-btn" onClick={() =>  navigate("/contact")}>Chat with us</button>
             </div>
 
           </div>

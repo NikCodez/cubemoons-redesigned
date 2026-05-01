@@ -1,11 +1,11 @@
-import healthcare from "./assets/images/healthcare.png";
-import edtech from "./assets/images/edtech.png";
-import ecommerce from "./assets/images/ecommerce.png";
-import startup from "./assets/images/startup.png";
-import realestate from "./assets/images/realestate.png";
-import questionmark from "./assets/animations/questionmark.webm";
-import chats from "./assets/animations/chats.webm";
-import Target from "./assets/animations/Target.webm";
+import healthcare from "@/assets/images/healthcare.png";
+import edtech from "@/assets/images/edtech.png";
+import ecommerce from "@/assets/images/ecommerce.png";
+import startup from "@/assets/images/startup.png";
+import realestate from "@/assets/images/realestate.png";
+import questionmark from "@/assets/animations/questionmark.webm";
+import chats from "@/assets/animations/chats.webm";
+import Target from "@/assets/animations/Target.webm";
 
 function Industries() {
   return (

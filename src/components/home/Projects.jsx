@@ -1,7 +1,7 @@
-import moneymarket from "./assets/images/moneymarket.jpeg";
-import keepconnect from "./assets/images/keepconnect.jpeg";
-import kovon from "./assets/images/kovon.jpeg";
-import bakeoffun from "./assets/images/bakeoffun.jpeg";
+import moneymarket from "@/assets/images/moneymarket.jpeg";
+import keepconnect from "@/assets/images/keepconnect.jpeg";
+import kovon from "@/assets/images/kovon.jpeg";
+import bakeoffun from "@/assets/images/bakeoffun.jpeg";
 
 function Projects() {
   return (
