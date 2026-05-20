@@ -59,11 +59,11 @@ function Contact() {
 
           <div className="contact-card">
             <img src={gif247} alt="support" className = "gifs"/>
-            <h3>Technical Assistance</h3>
-            <p>Hands-on help for technical challenges and implementation needs.</p>
+            <h3>24×7 Customer Support</h3>
+            <p>Round-the-clock assistance for your queries and issues.</p>
             <ul>
-                <li>Integration & setup help</li>
-                <li>Developer-focused support </li>
+                <li>Instant help anytime, anywhere</li>
+                <li>Dedicated support for all users</li>
               </ul>
             <button href="mailto:support@cubemoons.com">Send email →</button>
           </div>
