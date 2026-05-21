@@ -89,7 +89,7 @@ margin-top: -26px;
     width: 30%;
     max-width: 600px;
     margin-top: -10px;
-    animation: rotateCube 6s linear infinite;
+    animation: rotateCube 6s cubic-bezier(0.95, 0.15, 0.42, 0.45) infinite;
 }
 
 @keyframes rotateCube {

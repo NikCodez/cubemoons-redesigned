@@ -92,7 +92,7 @@ function MegaMenuContent({ activeMenu }) {
             <div className="menu-col">
               <h4>Company</h4>
               <div className="menu-item"><h5>Our Process</h5><p>A quick look at who we are and what we do</p></div>
-              <div className="menu-item"><h5>Vision & Mission</h5><p>Our long-term goals and future direction</p></div>
+              <div className="menu-item"><h5 onClick={() => navigate("/vision")}>Vision & Mission</h5><p>Our long-term goals and future direction</p></div>
             </div>
 
             <div className="menu-col">
