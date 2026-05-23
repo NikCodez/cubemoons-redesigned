@@ -152,7 +152,7 @@ const valuesData = [
       <div
         className="future-bg"
         style={{
-          backgroundImage: `url(${item.image})`
+          backgroundImage: `url(${item.image})`,
         }}
       ></div>
 

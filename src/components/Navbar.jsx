@@ -38,7 +38,15 @@ function Navbar({ variant = "dark" }) {
     <header className={`navbar ${variant === "light" ? "light" : ""}`} ref={menuRef}>
       <nav>
         <div className="nav-left">
-          <img src="/cubemoons logo.png" />
+          <img
+  src={
+    variant === "light"
+      ? "/cubemoons-logo-dark.png"
+      : "/cubemoons-logo.png"
+  }
+  alt="Cubemoons Logo"
+  className="navbar-logo"
+/>
           <ul className="nav-links">
             <li className={`nav-item ${activeMenu === "who" ? "active" : ""}`}
                 onClick={() => toggleMenu("who")}>

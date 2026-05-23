@@ -48,7 +48,7 @@ const [animate, setAnimate] = useState(false);
 
             {/* LEFT */}
             <div className="footer-col">
-              <img src="/cubemoons logo.png" alt="logo" className="footer-logo" />
+              <img src="/cubemoons-logo.png" alt="logo" className="footer-logo" />
 
               <p className="footer-desc">
                 Want to make sure we’re the <br /> right fit? Book a discovery call!
@@ -61,13 +61,13 @@ const [animate, setAnimate] = useState(false);
               <button className="book-btn" onClick={() =>  navigate("/contact")}>Book a call →</button>
 
               <div className="socials">
-                <a href="https://x.com/Cubemoons_"><img src="/X logo.png" alt="X" /></a>
-                <a href="https://www.youtube.com/@cubemoons"><img src="/youtube logo.png" alt="youtube" /></a>
-                <a href="#"><img src="/Whatsapp logo.png" alt="Whatsapp" /></a>
+                <a href="https://x.com/Cubemoons_"><img src="/X-logo.png" alt="X" /></a>
+                <a href="https://www.youtube.com/@cubemoons"><img src="/youtube-logo.png" alt="youtube" /></a>
+                <a href="#"><img src="/Whatsapp-logo.png" alt="Whatsapp" /></a>
               
-                <a href="https://www.linkedin.com/company/cubemoons/posts/?feedView=all"><img src="/Linkedin logo.png" alt="LinkedIn" /></a>
-                <a href="https://www.instagram.com/cube.moons/"><img src="/Instagram logo.png" alt="Instagram" /></a>
-                <a href="https://www.facebook.com/people/Cubemoons/61577696759028/#"><img src="/Facebook logo.png" alt="Facebook" /></a>
+                <a href="https://www.linkedin.com/company/cubemoons/posts/?feedView=all"><img src="/Linkedin-logo.png" alt="LinkedIn" /></a>
+                <a href="https://www.instagram.com/cube.moons/"><img src="/Instagram-logo.png" alt="Instagram" /></a>
+                <a href="https://www.facebook.com/people/Cubemoons/61577696759028/#"><img src="/Facebook-logo.png" alt="Facebook" /></a>
               </div>
             </div>
 

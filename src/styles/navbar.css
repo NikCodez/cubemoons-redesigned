@@ -22,7 +22,7 @@
 .navbar {
     position: relative;
     height: 70px;
-    background: transparent;
+    background: transparent; 
     width: 100%;
     z-index: 1000;
     border-bottom: 2.3px solid rgba(255,255,255,0.15);
@@ -31,21 +31,20 @@
 .navbar.light .nav-links li {
     color: #000;
 }
-
-.navbar.light .contact-btn {
-    color: #000;
-    border-color: #000;
+.navbar.light {
+    border-bottom: 2.3px solid rgba(0,0,0,0.15);
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    position: sticky;
     top: 0;
     z-index: 1000;
     padding: 3px;
     height: 100%; 
+    background: transparent;
+
 }
 
 .nav-left img{width: 100px; height: auto; }
@@ -61,7 +60,7 @@ nav{
     color: white;
     border: 1px solid #82B8DC;
     border-radius: 8px;
-    height: 30px;
+    height: 31px;
     width: 105px;
     display: flex;
     align-items: center;
