@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import ContactSection from "@/components/ContactSection";
-
+import { useNavigate } from "react-router-dom";
 import trophyImg from "@/assets/images/awards-hero.png";
 import award1 from "@/assets/images/award1.jpg";
 import award2 from "@/assets/images/award2.jpg";
@@ -11,7 +11,7 @@ import curiosityImg from "@/assets/images/curiosity.jpg";
 import "@/styles/Awards.css";
 
 function Awards() {
-
+  const navigate = useNavigate();
     const valuesData = [
       {
         title: "Ownership and accountability",

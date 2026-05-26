@@ -6,6 +6,7 @@ import Vision from "@/pages/Vision";
 import Leadership from "./pages/Leadership";
 import Process from "./pages/Process";
 import Awards from "./pages/Awards";
+import OurTeam from "./pages/OurTeam";
 import { Route , Routes } from "react-router-dom" ;
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/leadership" element={<Leadership />} />
         <Route path="/process" element={<Process />} />
         <Route path="/awards" element={<Awards />} />
+        <Route path="/ourteam" element={<OurTeam />} />
       </Routes>
   );
 }
